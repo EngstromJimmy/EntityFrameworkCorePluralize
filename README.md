@@ -8,23 +8,9 @@ This is talked about in this [StackOverflow post](https://stackoverflow.com/ques
 I choose to modify the one Microsoft provided in previous versions of Entity Framework found [here](https://github.com/Microsoft/referencesource/blob/master/System.Data.Entity.Design/System/Data/Entity/Design/PluralizationService/EnglishPluralizationService.cs).  
 
 Usage:
-1. Add the nuget package https://www.nuget.org/packages/EntityFrameworkCore.Pluralize/
-2. Add a class named [PluralizeDesignTimeServices.cs](https://gist.github.com/Apeoholic/bda9c9b1815321ff99d173ca0b99cebf#file-pluralizedesigntimeservices-cs) and add this code:
-
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Scaffolding.Internal;
-using Microsoft.Extensions.DependencyInjection;
-
-public class PluralizeDesignTimeServices : IDesignTimeServices
-{
-    public void ConfigureDesignTimeServices(IServiceCollection services)
-    {
-        services.AddSingleton<IPluralizer, EnglishPluralizer>();
-    }
-}
-
-3. Run dotnet ef scaffold...... and everything will be named correctly =)
+1. Add the nuget package https://www.nuget.org/packages/EntityFrameworkCore.Pluralize/  
+2. Add a class named [PluralizeDesignTimeServices.cs](https://gist.github.com/Apeoholic/bda9c9b1815321ff99d173ca0b99cebf#file-pluralizedesigntimeservices-cs)  
+3. Run dotnet ef scaffold...... and everything will be named correctly =)  
 
 If some translations are missing, please do a PR or contact me and I will add them.
 

@@ -1,4 +1,5 @@
-[https://img.shields.io/nuget/v/EntityFrameworkCore.Pluralize.svg?style=flat-square](https://www.nuget.org/packages/EntityFrameworkCore.Pluralize/)
+[![Nuget](https://img.shields.io/nuget/v/EntityFrameworkCore.Pluralize.svg?style=flat-square)](https://www.nuget.org/packages/EntityFrameworkCore.Pluralize/)
+
 
 
 # EntityFrameworkCorePluralize

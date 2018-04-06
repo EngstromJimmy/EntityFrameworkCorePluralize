@@ -9,6 +9,9 @@ I choose to modify the one Microsoft provided in previous versions of Entity Fra
 
 Usage:
 1. Add the nuget package https://www.nuget.org/packages/EntityFrameworkCore.Pluralize/
-2. Add a class that looks like this:
+2. Add a class named PluralizeDesignTimeServices.cs and add this code:
+<script src="https://gist.github.com/Apeoholic/bda9c9b1815321ff99d173ca0b99cebf.js"></script>
+3. Run dotnet ef scaffold...... and everything will be named correctly =)
 
+If some translations are missing, please do a PR or contact me and I will add them.
 
